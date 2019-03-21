@@ -1,0 +1,20 @@
+
+<div class="container">
+<h1>File Upload</h1>
+<%= typeof msg != 'undefined' ? msg : '' %>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+  <div>
+
+      <span>File</span>
+      <input name="myImage" type="file">
+
+
+
+
+
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </div>
+</form>
+<br>
+<img src="<%= typeof file != 'undefined' ? file : '' %>" class="img-responsive">
+</div>
